@@ -1,0 +1,41 @@
+{
+  "name": "aws-clean-lambda-manager",
+  "version": "1.0.0",
+  "description": "Clean Lambda Starting Environment",
+  "main": "dist/handler.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreiDiaconovici/aws-clean-lambda-manager.git"
+  },
+  "homepage": "https://github.com/AndreiDiaconovici/aws-clean-lambda-manager#readme",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.107",
+    "@types/node": "14.17.3",
+    "@types/uuid": "^8.3.4",
+    "@types/winston": "^2.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1231.0",
+    "eslint": "^8.25.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.1.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "ajv": "^8.11.0",
+    "uuid": "^9.0.0",
+    "winston": "^3.8.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rm -r dist && echo 'Dist folder removed' || echo 'Dist folder does not exist'",
+    "build": "tsc && npm prune --no-audit --progress=false --production && mv node_modules dist"
+  },
+  "bugs": {
+    "url": "https://github.com/AndreiDiaconovici/aws-clean-lambda-manager/issues"
+  },
+  "author": "Andrei Marius Diaconovici",
+  "license": "MIT"
+}

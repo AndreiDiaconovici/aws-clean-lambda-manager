@@ -1,0 +1,28 @@
+{
+  "$id": "_v1_example:GET.json",
+  "type": "object",
+  "properties": {
+    "pathParameters": {
+      "type": "object",
+      "properties": {
+        
+      },
+      "additionalProperties": false
+    },
+    "queryParameters": {
+      "type": "object",
+      "properties": {
+        
+      },
+      "additionalProperties": false
+    },
+    "requestBody": {
+      "type": "object",
+      "properties": {
+      },
+      "required": [],
+      "additionalProperties": false
+    }
+  },
+  "required": ["pathParameters", "requestBody"]
+}
